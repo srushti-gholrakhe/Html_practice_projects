@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1 id="title">Quick Survey form</h1>
+    <p id="description">Please share your thoughts in this quick survey—your input makes a difference.</p>
+    <form id="survey-form">
+      
+      <label for="name" id="name-label"  >Name:</label>
+      <input id="name" type="text" placeholder="eg.John Ede" name="name" required>
+      
+      <label for="email" id="email-label" >Email:</label>
+      <input id="email" type="email" required placeholder="eg.xyz@gmail.com" name="email">
+      
+      <label for="number" id="number-label" name="age">Age:</label>
+      <input id="number" type="number" required min="18" max="100" placeholder="enter your age" name="age"  >
+
+      <label for="dropdown" >choose your qualification</label>
+      <select id="dropdown">
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="undergraduate">undergraduate</option>
+        <option value="postgraduate">postgraduate</option>
+      </select>
+      
+      <p>Choose your interest in.....<p>
+      <input type="radio" name="interest" id="webdev" value="webdev">
+      <label for="webdev">Web-development</label>
+
+      <input type="radio" name="interest" id="datasci" value="datasci">
+      <label for="datasci">Data-Science</label>
+       
+      <input type="radio" name="interest" id="cyber" value="cyber">
+      <label for="cyber">Cybersecurity</label>
+
+      <input type="radio" name="interest" id="ai" value="ai">
+      <label for="ai">AI(Artificial Inteligence)</label>
+
+      <p>Select the topic you want to learn</p>
+      <input type="checkbox" name="learn" value="html" id="html">
+      <label for="html">HTML</label>
+
+      <input type="checkbox" name="learn" value="CSS" id="CSS">
+      <label for="CSS">CSS</label>
+
+      <input type="checkbox" name="learn" value="JS" id="JS">
+      <label for="JS">JS(Javascript)</label>
+      <br>
+      <label for="textarea" >Other:</label>
+      <br>
+      <textarea placeholder="Other feedback" cols="15" rows="10"></textarea>
+      <br>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+
+
